@@ -1,0 +1,62 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.services {
+  padding: 7rem 0;
+
+  .service-grid {
+    margin-top: 4.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    @include breakpoint-max("md") {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .service {
+    background-color: #fff;
+    padding: 4.5rem 3.5rem;
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    border-radius: 24px;
+    height: 100%;
+
+    &-icon {
+      background: #2d9cdb;
+      width: 55px;
+      height: 55px;
+      border-radius: 16px;
+      @include flexCenter;
+
+      &-green {
+        background: #27ae60;
+      }
+
+      &-red {
+        background: #eb5757;
+      }
+
+      .bx {
+        color: #fff;
+        font-size: 2.2rem;
+      }
+    }
+
+    &-name {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin: 3.5rem 0 2.3rem;
+    }
+
+    &-description {
+      margin-bottom: 3.5rem;
+      color: $color-gray-500;
+    }
+
+    .btn {
+      padding: 1rem 1.3rem;
+      font-size: 1.4rem;
+    }
+  }
+}

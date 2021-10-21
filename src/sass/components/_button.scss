@@ -1,0 +1,23 @@
+@use "../mixins" as *;
+
+.btn {
+  appearance: none;
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  @include button;
+}
+
+.btn-primary {
+  background: #2d9cdb;
+  color: #f2f2f2;
+}
+
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #828282;
+}

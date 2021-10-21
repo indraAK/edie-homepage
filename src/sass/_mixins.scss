@@ -1,0 +1,24 @@
+@use "./variables" as *;
+
+@mixin button($padding: 1rem, $font-size: 1.6rem) {
+  padding: $padding;
+  font-size: $font-size;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin breakpoint-max($size) {
+  @media screen and (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-min($size) {
+  @media screen and (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

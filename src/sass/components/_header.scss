@@ -1,0 +1,106 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+header {
+  background-color: #fff;
+  width: 100%;
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  @include breakpoint-max("sm") {
+    min-height: 6.5rem;
+  }
+
+  &.fixed {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .site-logo {
+      font-size: clamp(2.5rem, 5vw, 3.6rem);
+      color: $color-gray-600;
+    }
+
+    &-list {
+      display: flex;
+      align-items: baseline;
+
+      @include breakpoint-max("md") {
+        display: none;
+      }
+    }
+
+    &-item {
+      margin-left: 4rem;
+    }
+
+    &-link {
+      color: $color-gray-600;
+    }
+
+    &-toggler {
+      height: 30px;
+      background: none;
+      padding: 0;
+      @include flexCenter;
+
+      @include breakpoint-min("md") {
+        display: none;
+      }
+
+      .stripe {
+        position: relative;
+
+        &,
+        &::before,
+        &::after {
+          display: inline-block;
+          width: 2.5rem;
+          height: 2px;
+          background-color: #333;
+          transition: all 400ms;
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+        }
+
+        &::before {
+          top: -8px;
+        }
+
+        &::after {
+          top: 8px;
+        }
+      }
+
+      &.active {
+        .stripe {
+          background-color: transparent;
+
+          &::before {
+            top: 0;
+            transform: rotate(135deg);
+          }
+
+          &::after {
+            top: 0;
+            transform: rotate(-135deg);
+          }
+        }
+      }
+    }
+  }
+}

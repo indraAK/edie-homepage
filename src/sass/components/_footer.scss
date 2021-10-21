@@ -1,0 +1,81 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+footer {
+  padding: 7rem 0;
+  background-color: #100e1d;
+  color: #f2f2f2;
+  margin-top: 13rem;
+
+  @include breakpoint-max("md") {
+    padding: 5rem 0;
+  }
+
+  @include breakpoint-max("sm") {
+    margin-top: 10rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    @include breakpoint-max("md") {
+      grid-template-columns: 1fr;
+      gap: 5rem 0;
+      justify-items: center;
+      text-align: center;
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+  }
+
+  .link-item {
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+    a {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  }
+
+  .site-name {
+    font-family: $font-secondary;
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+
+  .social-list {
+    display: flex;
+    align-items: baseline;
+    margin-top: 7px;
+  }
+
+  .social-item {
+    margin-right: 1rem;
+  }
+
+  .social-icon {
+    color: #f2f2f2;
+
+    .bx {
+      font-size: 2.5rem;
+    }
+  }
+
+  .contact-menu {
+    @include breakpoint-max("md") {
+      width: 100%;
+    }
+    label {
+      display: inline-block;
+      font-size: 1.4rem;
+      margin-bottom: 9px;
+
+      @include breakpoint-max("sm") {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

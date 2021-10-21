@@ -1,0 +1,89 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+  margin-top: 18rem;
+  margin-bottom: 4rem;
+
+  @include breakpoint-max("sm") {
+    margin-top: 12rem;
+  }
+
+  &-text {
+    margin-left: 15%;
+    max-width: 60rem;
+
+    @include breakpoint-max("md") {
+      margin-left: 7%;
+    }
+
+    @include breakpoint-max("sm") {
+      margin-left: 0;
+    }
+
+    .title {
+      font-size: clamp(3.5rem, 5vw, 4.4rem);
+      font-weight: 500;
+      font-style: normal;
+      line-height: 1.4;
+
+      @include breakpoint-max("md") {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  &-text-main {
+    p {
+      color: #2d9cdb;
+      font-size: 1.8rem;
+
+      @include breakpoint-max("sm") {
+        font-size: 1.2rem;
+      }
+    }
+
+    .title {
+      margin-top: 1rem;
+    }
+  }
+
+  &-text-second {
+    max-width: 40rem;
+
+    .sub-title {
+      margin: 4.2rem 0;
+      color: $color-gray-500;
+
+      @include breakpoint-max("sm") {
+        margin: 3.3rem 0 3.1rem;
+        font-size: 1.2rem;
+      }
+    }
+
+    .muted {
+      @include breakpoint-max("sm") {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &-img {
+    margin: 4.2rem 0;
+    border-radius: 18px;
+    height: 35rem;
+
+    @include breakpoint-max("md") {
+      @supports (aspect-ratio: 16 / 8) {
+        height: auto;
+        aspect-ratio: 16 / 8;
+      }
+
+      margin: 1.5rem 0 2.2rem;
+    }
+  }
+
+  form {
+    margin-top: 1rem;
+  }
+}

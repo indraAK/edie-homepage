@@ -1,0 +1,55 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #fff;
+  color: $color-gray-600;
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.muted {
+  color: $color-gray-400;
+  font-size: 1.4rem;
+}
+
+.section-title {
+  font-size: 3.3rem;
+  font-weight: 500;
+
+  @include breakpoint-max("sm") {
+    font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,39 @@
+@use "../mixins" as *;
+
+.testimonial {
+  padding: 7rem 0;
+
+  .testi-text {
+    font-size: 2.5rem;
+    font-weight: 500;
+    max-width: 75rem;
+
+    @include breakpoint-max("sm") {
+      font-size: 2rem;
+    }
+  }
+
+  .user {
+    margin-top: 3rem;
+    @include flexCenter;
+    justify-content: flex-start;
+
+    &-img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 12px;
+      margin-right: 2.5rem;
+    }
+
+    .name {
+      font-size: 2.2rem;
+      font-weight: 500;
+    }
+
+    .occupation {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+  }
+}

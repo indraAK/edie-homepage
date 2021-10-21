@@ -1,0 +1,72 @@
+@use "../mixins" as *;
+
+.portfolio {
+  padding: 7rem 0;
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 4rem;
+    margin-top: 3rem;
+
+    @include breakpoint-max("sm") {
+      grid-template-columns: 1fr;
+      gap: 4rem 0;
+    }
+  }
+
+  .project {
+    &-img {
+      height: 400px;
+      border-radius: 12px;
+
+      @supports (aspect-ratio: 16 / 13) {
+        aspect-ratio: 16 / 13;
+        height: auto;
+      }
+    }
+
+    &-category {
+      font-size: 1.4rem;
+      font-weight: 300;
+      margin-top: 2rem;
+
+      @include breakpoint-max("sm") {
+        font-size: 1.2rem;
+      }
+    }
+
+    &-name {
+      font-size: 2.2rem;
+      font-weight: 500;
+      margin-top: 5px;
+
+      @include breakpoint-max("sm") {
+        font-size: 1.8rem;
+      }
+    }
+
+    &:nth-of-type(odd) {
+      margin-top: 25%;
+
+      @include breakpoint-max("sm") {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .action {
+    text-align: right;
+
+    @include breakpoint-max("md") {
+      text-align: left;
+      margin-top: 3.5rem;
+    }
+
+    .cta {
+      color: #2d9cdb;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+}

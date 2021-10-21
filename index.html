@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@700&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Mobile nav -->
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link">Home</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link">Services</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link">Our Works</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link">Clients</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <h1 class="site-logo">Edie</h1>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Our Works</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Clients</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+          <button class="btn nav-toggler" role="menu">
+            <span class="stripe"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text hero-text-main">
+          <p>Unhappy with your website?</p>
+          <h2 class="title">We create beautiful <br />and fast web services</h2>
+        </div>
+        <img src="./src/images/heroImage.jpg" class="hero-img" alt="" />
+        <div class="hero-text hero-text-second">
+          <h2 class="title">Story, emotion <br />and purpose</h2>
+          <p class="sub-title">
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
+          <p class="muted">Want us to contact you?</p>
+          <form>
+            <div class="input-group">
+              <input type="email" placeholder="Email" />
+              <button type="submit" class="btn btn-primary">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="container">
+        <h2 class="section-title">
+          We offer high <br />
+          demand services
+        </h2>
+        <div class="service-grid">
+          <div class="service">
+            <div class="service-icon service-icon-blue">
+              <i class="bx bxs-pencil"></i>
+            </div>
+            <h4 class="service-name">UI/UX Design</h4>
+            <p class="service-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="btn btn-secondary">Get started</a>
+          </div>
+          <div class="service">
+            <div class="service-icon service-icon-green">
+              <i class="bx bx-code"></i>
+            </div>
+            <h4 class="service-name">Front End</h4>
+            <p class="service-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="btn btn-primary">Get started</a>
+          </div>
+          <div class="service">
+            <div class="service-icon service-icon-red">
+              <i class="bx bx-list-ul"></i>
+            </div>
+            <h4 class="service-name">Back End</h4>
+            <p class="service-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="btn btn-secondary">Get started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="section-title">
+          Good design means <br />
+          good business
+        </h2>
+        <div class="project-grid">
+          <div class="project">
+            <img
+              src="./src/images/smarthome.jpg"
+              alt="smarthome"
+              class="project-img"
+            />
+            <p class="project-category muted">Full stack application</p>
+            <h4 class="project-name">Smart home dashboard</h4>
+          </div>
+          <div class="project">
+            <img
+              src="./src/images/onboard.png"
+              alt="onboard"
+              class="project-img"
+            />
+            <p class="project-category muted">UX/UI design</p>
+            <h4 class="project-name">Onboard application</h4>
+          </div>
+          <div class="project">
+            <img
+              src="./src/images/booking.png"
+              alt="booking"
+              class="project-img"
+            />
+            <p class="project-category muted">Mobile application</p>
+            <h4 class="project-name">Booking system</h4>
+          </div>
+          <div class="project">
+            <img
+              src="./src/images/juice-product.png"
+              alt="juice-product"
+              class="project-img"
+            />
+            <p class="project-category muted">Front End application</p>
+            <h4 class="project-name">Juice product homepage</h4>
+          </div>
+        </div>
+        <div class="action">
+          <a href="#" class="cta">see more &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team">
+      <div class="container">
+        <div class="intro-team">
+          <p class="text-red">Meet the team</p>
+          <h2 class="section-title">We are chilled and a laidback team</h2>
+          <p class="sub-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="team-img">
+          <div class="image-grid">
+            <div class="image-1">
+              <img
+                src="./src/images/person3.png"
+                class="person-img person-img-1"
+                alt=""
+              />
+            </div>
+            <div class="image-2">
+              <img src="./src/images/person1.png" class="person-img" alt="" />
+            </div>
+            <div class="image-3">
+              <img src="./src/images/person2.png" class="person-img" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial">
+      <div class="container">
+        <div class="testi">
+          <p class="testi-text">
+            “Fast and outstanding resutls. Edie understands their customer’s
+            needs. They have a young and talented team.”
+          </p>
+          <div class="user">
+            <img src="./src/images/person4.png" class="user-img" alt="Carlos" />
+            <div class="user-info">
+              <p class="name">Carlos Tran</p>
+              <p class="occupation muted">The Decorate Gatsby</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <ul class="link-list">
+            <li class="link-item"><a href="#">Home</a></li>
+            <li class="link-item"><a href="#">Services</a></li>
+            <li class="link-item"><a href="#">Our Works</a></li>
+            <li class="link-item"><a href="#">Clients</a></li>
+            <li class="link-item"><a href="#">Contact</a></li>
+          </ul>
+          <div class="social-menu">
+            <h4 class="site-name">Edie</h4>
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="#" class="social-icon"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-icon"
+                  ><i class="bx bxl-linkedin-square"></i
+                ></a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-icon"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-menu">
+            <form>
+              <label for="email">Want us to contact you?</label>
+              <div class="input-group">
+                <input type="email" placeholder="Email" id="email" />
+                <button type="submit" class="btn btn-primary">Join</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

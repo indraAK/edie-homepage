@@ -1,0 +1,53 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.input-group {
+  position: relative;
+  height: 5.5rem;
+  border-radius: 12px;
+  overflow-x: hidden;
+
+  @include breakpoint-max("sm") {
+    height: 4.7rem;
+  }
+
+  input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: #f2f2f2;
+    color: $color-gray-500;
+    font-family: inherit;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    padding: 1rem 3rem 1rem 2rem;
+
+    &::placeholder {
+      color: $color-gray-400;
+    }
+
+    @include breakpoint-max("sm") {
+      font-size: 1.4rem;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    top: 3px;
+    right: 4px;
+    width: 94px;
+    height: 49px;
+    font-size: 1.8rem;
+
+    @include breakpoint-max("sm") {
+      width: 7rem;
+      height: 3.9rem;
+      font-size: 1.4rem;
+      top: 4px;
+    }
+  }
+}
