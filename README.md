@@ -6,15 +6,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://github.com/indraAK/checkout-page">
+    <a href="https://nervous-turing-7404af.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/udnuBOi610SRgIhJPYfw">
+    <a href="https://devchallenges.io/solutions/Icseg5nqzgO1BXYcpINU">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb">
+    <a href="https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0">
       Challenge
     </a>
   </h3>
